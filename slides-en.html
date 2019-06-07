@@ -60,6 +60,7 @@
       </footer>
     </section>
 
+
     <section class="slide intro">
       <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
       <h1 class="heading-bg">
@@ -90,6 +91,7 @@
       </footer>
     </section>
 
+
     <section class="slide project" data-markdown>
       <script type="text/template">
         # Today&rsquo;s project
@@ -102,11 +104,9 @@
         They've generously agreed to let us use their data for this workshop (thanks!)
 
         ![Programming ](framework/img/workshop/marvin.gif)
-
-
-
       </script>
     </section>
+
 
     <section class="slide agenda" data-markdown>
       <script type="text/template">
@@ -130,6 +130,7 @@
       </script>
     </section>
 
+
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
         #Coders' code
@@ -143,21 +144,22 @@
       </script>
     </section>
 
-<!-- temp slide-->
-     <section class="slide" data-markdown>
-        <script type="text/template">
+
+    <!-- temp slide-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
           ## June's Theme is...
 
           # Climate
 
           We are a product of our environment. The environment that all of us share is our climate. Climate, not to be confused with weather – is what represents the Earth’s average conditions over time. It determines what living things like microorganisms, plants, animals, and ourselves – humans can grow and survive.
 
-          **Think about the climate in the Canadian cities in todays dataset and see if you can identify patterns.**
+          **Think about the climate in the Canadian cities in todays dataset and see if you can identify any patterns.**
 
           Share your project using #clcCode4Change. More info [here](https://www.canadalearningcode.ca/code-can-change-the-world/).
+      </script>
+    </section>
 
-        </script>
-      </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -169,13 +171,10 @@
         * In python these have the file extension `.py`
         * Another special program takes the file and translates the python commands into another form the computer can use
 
-
-
         ![Programming ](framework/img/workshop/what_is_programming.png)
-
-
       </script>
     </section>
+
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -194,13 +193,9 @@
         * Work with a database
         * and so on!
 
-
-         More: https://docs.python.org/3.7/library/index.html
-
-
+        More: https://docs.python.org/3.7/library/index.html
       </script>
     </section>
-
 
 
     <section class="slide who-uses" data-markdown>
@@ -224,17 +219,16 @@
 
         ### Why Python Is Awesome
 
-        *   Free!
-        *   Open source
-        *   Write once, run anywhere
-        *   Great community
-        *   The syntax looks similar to English
-        *   Meaningful errors, easy to debug
-        *   4th most popular programming language [(SO Survey 2019)](https://insights.stackoverflow.com/survey/2019)
-
-
+        * Free!
+        * Open source
+        * Write once, run anywhere
+        * Great community
+        * The syntax looks similar to English
+        * Meaningful errors, easy to debug
+        * 4th most popular programming language [(SO Survey 2019)](https://insights.stackoverflow.com/survey/2019)
       </script>
     </section>
+
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
@@ -249,6 +243,7 @@
       </script>
     </section>
 
+
     <section class="slide centered" data-markdown>
       <script type="text/template">
         ## PyCharm IDE <br>(Integrated Development Environments)
@@ -258,6 +253,7 @@
         ![Use the force!](framework/img/workshop/use_the_force.gif) <!-- .element: style="width: 60%" -->
       </script>
     </section>
+
 
     <section class="slide side-by-side" data-markdown>
       <script type="text/template">
@@ -327,8 +323,6 @@
         >>> 2 ** 3
         8
         ```
-
-
       </script>
     </section>
 
@@ -400,10 +394,8 @@
         >>> print("Hello " + "Ladies " + "Learning " + "Code!")
         Hello Ladies Learning Code!
         ```
-
       </script>
     </section>
-
 
 <!-- -------------------- -->
 <!--Variables-->
@@ -503,63 +495,63 @@
 <!-- Conditionals & Booleans -->
 <!-- -------------------- -->
 
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## Conditionals &amp; Logic
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Conditionals &amp; Logic
 
-    When you get ready in the morning you might check the weather to decide what to wear.
+        When you get ready in the morning you might check the weather to decide what to wear.
 
-    ![Getting Dressed!](framework/img/workshop/weather.gif) <!-- .element: style="width: 25%" -->
-
-
-    * Is it cold outside? Wear long johns
-    * Is it raining? Bring an umbrella
-
-    When you do this you are evaluating a **condition** (the weather) for true/false value and then making a decision.
-    Python can do this too.
+        ![Getting Dressed!](framework/img/workshop/weather.gif) <!-- .element: style="width: 25%" -->
 
 
-  </script>
-</section>
+        * Is it cold outside? Wear long johns
+        * Is it raining? Bring an umbrella
 
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## Boolean values
+        When you do this you are evaluating a **condition** (the weather) for true/false value and then making a decision.
+        Python can do this too.
+      </script>
+    </section>
 
-    Programming languages have **boolean** values called `True` and `False`
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Boolean values
 
-    They are the result of testing a condition.
-    ### Example
-    Is it snowing outside? That is either `True` or `False`.
+        Programming languages have **boolean** values called `True` and `False`
 
-    Try this in the console. Create a variable called `weather`
-    ```python
-    >>> weather = "snowing"
-    ```
+        They are the result of testing a condition.
+        ### Example
+        Is it snowing outside? That is either `True` or `False`.
 
-    Now test it against other weather values.
+        Try this in the console. Create a variable called `weather`
+        ```python
+        >>> weather = "snowing"
+        ```
 
-    The double equals symbol (`==`) will check if the value on the right matches the value stored in the variable.
+        Now test it against other weather values.
 
-    ```
-    >>> weather == "cold"
-    False
-    >>> weather == "snowing"
-    True
-    >>> weather == "Snowing"
-    False
-    ```
-  </script>
-</section>
+        The double equals symbol (`==`) will check if the value on the right matches the value stored in the variable.
 
-<section class="slide" data-markdown>
-  <script type="text/template">
-    ## Comparison operators
+        ```
+        >>> weather == "cold"
+        False
+        >>> weather == "snowing"
+        True
+        >>> weather == "Snowing"
+        False
+        ```
+      </script>
+    </section>
 
-    We used ` == ` to compare strings. How do we compare numbers?
 
-    ### Comparison Operators
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Comparison operators
+
+        We used ` == ` to compare strings. How do we compare numbers?
+
+        ### Comparison Operators
         `x == y` : are x and y equal
+
         `x > y` : is x greater than y
 
         `x < y` : is x less than y
@@ -568,21 +560,22 @@
 
         `x <= y` : is x less than or equal to y
 
-    Try this in the console
+        Try this in the console
 
-    ```python
-    >>> x = 4
-    >>> y = 10
-    >>> x < y
-    True
-    >>> x > y
-    False
-    ```
-  </script>
-</section>
+        ```python
+        >>> x = 4
+        >>> y = 10
+        >>> x < y
+        True
+        >>> x > y
+        False
+        ```
+      </script>
+    </section>
 
-<section class="slide" data-markdown>
-  <script type="text/template">
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         ## Conditionals &amp; Logic (Continued)
 
         `if` statements are used to execute different sets of instructions based on the result of a conditional test.
@@ -607,9 +600,9 @@
         else:
             print("Who knows?")
         ```
+      </script>
+    </section>
 
-  </script>
-</section>
 
 <section class="slide" data-markdown>
   <script type="text/template">
@@ -632,7 +625,6 @@
             ^
         IndentationError: expected an indented block
         ```
-
   </script>
 </section>
 
@@ -652,9 +644,9 @@
           ![new python file name](framework/img/workshop/new-python-file.png)
 
       </script>
-    </section>
+</section>
 
-    <section class="slide" data-markdown>
+<section class="slide" data-markdown>
       <script type="text/template">
         ## Run a python file
 
@@ -673,7 +665,7 @@
         <br>
         You can run your program as many times as you like by repeating the steps above.
       </script>
-    </section>
+</section>
 
 
 <section class="slide" data-markdown>
@@ -941,39 +933,38 @@
       </script>
     </section>
 
+
     <section class="slide" data-markdown>
       <script type="text/template">
         ## Add Items to a List
 
         To add a new item to a list, use the function `append()`
 
-         ```python
-         >>> weather_conditions.append('windy')
-         ```
+        ```python
+        >>> weather_conditions.append('windy')
+        ```
 
-         ```python
-         >>> print(weather_conditions)
-         ```
+        ```python
+        >>> print(weather_conditions)
+        ```
 
-         To remove an item from a list, use the function `remove()`
+        To remove an item from a list, use the function `remove()`
 
-         ```python
-         >>> weather_conditions.remove('sunny')
-         ```
+        ```python
+        >>> weather_conditions.remove('sunny')
+        ```
 
-         ```python
-         >>> print(weather_conditions)
-         ```
+        ```python
+        >>> print(weather_conditions)
+        ```
 
-         To count the number of items you have, use the function `len()`
+        To count the number of items you have, use the function `len()`
 
-         ```python
-         >>> len(weather_conditions)
-         ```
+        ```python
+        >>> len(weather_conditions)
+        ```
 
-         These are going to come in handy when we have lists with thousands of items.
-
-
+        These are going to come in handy when we have lists with thousands of items.
       </script>
     </section>
 
@@ -998,8 +989,7 @@
         for type_of_weather in weather_conditions:
             print(type_of_weather)
         ```
-
-    </script>
+      </script>
     </section>
 
 <section class="slide" data-markdown>
