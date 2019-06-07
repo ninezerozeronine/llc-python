@@ -583,58 +583,55 @@
 
 <section class="slide" data-markdown>
   <script type="text/template">
-    ## Conditionals &amp; Logic (Continued)
+        ## Conditionals &amp; Logic (Continued)
 
-    `if` statements are used to execute different sets of instructions based on the result of a conditional test.
+        `if` statements are used to execute different sets of instructions based on the result of a conditional test.
 
-    Each `if` statement contains a test. The indented block is the code that will run if the test is `True`
+        Each `if` statement contains a test. The indented block is the code that will run if the test is `True`
 
-    ```python
-    weather = "snowing"
-    if weather == "snowing":
-       print("Wear snowpants")
-    ```
-    You can check more than one per `if` block by adding an `elif`.
+        ```python
+        weather = "snowing"
+        if weather == "snowing":
+            print("Wear snowpants")
+        ```
 
-    The `else` block will run if none of the others are true.
-    ```python
-    weather = "snowing"
-    if weather == "snowing":
-      print("Wear snowpants")
-    elif weather == "raining":
-      print("Bring an umbrella")
-    else:
-      print("Who knows?")
+        You can check more than one per `if` block by adding an `elif`.
 
-    ```
+        The `else` block will run if none of the others are true.
+        ```python
+        weather = "snowing"
+        if weather == "snowing":
+            print("Wear snowpants")
+        elif weather == "raining":
+            print("Bring an umbrella")
+        else:
+            print("Who knows?")
+        ```
 
   </script>
 </section>
 
 <section class="slide" data-markdown>
   <script type="text/template">
-    ## Indentation
+        ## Indentation
 
-    In python, indentation is important.
+        In python, indentation is important.
 
-    This will not work:
-    ```python
-      weather = "snowing"
-      if weather == "snowing":
-      print("Wear snowpants")
-
-       ```
-
-
-       Python will give you an error:
-       ```python
-       File "C:/Users/Darcie/Documents/GitHub/llc-intro-to-python/exercises/weather_advice.py", line 3
-       print("Wear snowpants")
-         ^
-      IndentationError: expected an indented block
-       ```
+        This will not work:
+        ```python
+        weather = "snowing"
+        if weather == "snowing":
+        print("Wear snowpants")
+        ```
 
 
+        Python will give you an error:
+        ```python
+        File "C:/Users/Darcie/Documents/GitHub/llc-intro-to-python/exercises/weather_advice.py", line 3
+        print("Wear snowpants")
+            ^
+        IndentationError: expected an indented block
+        ```
 
   </script>
 </section>
@@ -681,24 +678,23 @@
 
 <section class="slide" data-markdown>
   <script type="text/template">
-    ## Exercise : Simple weather advice (10 mins)
+        ## Exercise : Simple weather advice (10 mins)
 
-    In your file `weather_advice.py`:
+        In your file `weather_advice.py`:
 
-    * Copy this snippet into the file and change the value for the weather.
-    * Run it a few times with different values
-    * Add more `elif` blocks with other weather conditions
+        * Copy this snippet into the file and change the value for the weather.
+        * Run it a few times with different values
+        * Add more `elif` blocks with other weather conditions
 
-    ```python
-    weather = "snowing"
-    if weather == "snowing":
-      print("Wear snowpants")
-    elif weather == "raining":
-      print("Bring an umbrella")
-    else:
-      print("Who knows?")
-
-    ```
+        ```python
+        weather = "snowing"
+        if weather == "snowing":
+            print("Wear snowpants")
+        elif weather == "raining":
+            print("Bring an umbrella")
+        else:
+            print("Who knows?")
+        ```
 
 
   </script>
@@ -708,42 +704,40 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## Indenting multiple items
+            ## Indenting multiple items
 
-        To run more than one instruction per item, they must be intented the same amount.
+            To run more than one instruction per item, they must be intented the same amount.
 
-        ```python
-        weather = "snowing"
-        if weather == "snowing":
-          print("Wear snowpants")
-          print("Wear a touque")
-        elif weather == "raining":
-          print("Bring an umbrella")
-        else:
-          print("Who knows?")
+            ```python
+            weather = "snowing"
+            if weather == "snowing":
+                print("Wear snowpants")
+                print("Wear a touque")
+            elif weather == "raining":
+                print("Bring an umbrella")
+            else:
+                print("Who knows?")
+            ```
 
-        ```
+            If the indentation is wrong you'll see an error:
 
-        If the indentation is wrong you'll see an error:
+            ```python
+            weather = "snowing"
+            if weather == "snowing":
+                print("Wear snowpants")
+            print("Wear a touque")
+            elif weather == "raining":
+                print("Bring an umbrella")
+            else:
+                print("Who knows?")
+            ```
 
-        ```python
-        weather = "snowing"
-        if weather == "snowing":
-          print("Wear snowpants")
-        print("Wear a touque")
-        elif weather == "raining":
-          print("Bring an umbrella")
-        else:
-          print("Who knows?")
-
-        ```
-
-        ```python
-        File "C:/Users/Darcie/Documents/GitHub/llc-intro-to-python/exercises/weather_advice.py", line 5
-        elif weather == "raining":
-           ^
-        SyntaxError: invalid syntax
-        ```
+            ```python
+            File "C:/Users/Darcie/Documents/GitHub/llc-intro-to-python/exercises/weather_advice.py", line 5
+            elif weather == "raining":
+               ^
+            SyntaxError: invalid syntax
+            ```
 
       </script>
     </section>
@@ -754,22 +748,21 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        ## And / Or
+            ## And / Or
 
-        Sometimes, you can&rsquo;t neatly capture your conditions with one expression. You may need to combine multiple tests to determine what to do next.
+            Sometimes, you can&rsquo;t neatly capture your conditions with one expression. You may need to combine multiple tests to determine what to do next.
 
-        `and`: both things must be true
+            `and`: both things must be true
 
-        `or`: either one, or both things must be true
+            `or`: either one, or both things must be true
 
-        ### Example
-        Suppose a peice of advice applies to multiple situations. This indented block will run in either case.
-        ```python
-        weather = "snowing"
-        if weather == "snowing" or weather == 'sleet':
-          print("Wear boots")
-
-        ```
+            ### Example
+            Suppose a peice of advice applies to multiple situations. This indented block will run in either case.
+            ```python
+            weather = "snowing"
+            if weather == "snowing" or weather == 'sleet':
+                print("Wear boots")
+            ```
 
 
 
@@ -849,19 +842,19 @@
         To create a list, type a name for the list, then `=`, then put the items in square brackets.
 
         ```python
-        the_name_of_the_list = ['items', 'separated', 'by','commas']
+        the_name_of_the_list = ['items', 'separated', 'by', 'commas']
         ```
 
         #### Examples:
 
         ```python
-         weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+        weather_conditions = ['rainy', 'snowing', 'cloudy', 'sunny', 'foggy']
 
-         provinces = ['BC', 'AB', 'SK','MB','ON','QC','NL,','NB','NS','PE','YT','NT','NU']
+        provinces = ['BC', 'AB', 'SK', 'MB', 'ON', 'QC', 'NL', 'NB', 'NS', 'PE', 'YT', 'NT', 'NU']
 
-         to_do_list = ['Water plants','Clean bathroom','Buy shoes','Become Prime Minister', 'Solve climate change']
+        to_do_list = ['Water plants', 'Clean bathroom', 'Buy shoes', 'Become Prime Minister', 'Solve climate change']
 
-         prime_numbers = [2,3,5,7,11,13]
+        prime_numbers = [2, 3, 5, 7, 11, 13]
         ```
 
         Just like with variables we want to give our lists good, descriptive names.
@@ -877,7 +870,7 @@
         They are **indexed** (counted) starting at 0.
 
         ```python
-        weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+        weather_conditions = ['rainy', 'snowing', 'cloudy', 'sunny', 'foggy']
         ```
 
         Try these in the python console:
@@ -885,15 +878,14 @@
         >>> weather_conditions[0]
         >>> weather_conditions[3]
         >>> weather_conditions[10]
-       ```
-
-
+        ```
 
         ```python
         Traceback (most recent call last):
-           File "<input>", line 1, in <module>
+            File "<input>", line 1, in <module>
         IndexError: list index out of range
-          ```
+        ```
+
         Python cannot find `weather_conditions[10]` because it does not exist.
 
 
@@ -930,7 +922,7 @@
 
         Suppose we have a list of types of weather.
         ```python
-         weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+        weather_conditions = ['rainy', 'snowing', 'cloudy', 'sunny', 'foggy']
         ```
         What kinds of things could we want to do with this data?
 
@@ -991,16 +983,16 @@
       <script type="text/template">
         ## Loops
 
-          One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
+        One of the most powerful tools we have as programmers is having a computer repeat the same instruction for us many times.
 
-          ![Power](framework/img/workshop/power.gif) <!-- .element: width="30%" -->
+        ![Power](framework/img/workshop/power.gif) <!-- .element: width="30%" -->
 
-          Python can look at each item in a list in order, and do something with it. We call this **looping** through the list.
+        Python can look at each item in a list in order, and do something with it. We call this **looping** through the list.
 
-          ### Example
+        ### Example
 
         ```python
-        weather_conditions = ['rainy', 'snowing', 'cloudy','sunny','foggy']
+        weather_conditions = ['rainy', 'snowing', 'cloudy', 'sunny', 'foggy']
         for type_of_weather in weather_conditions:
             print(type_of_weather)
         ```
@@ -1081,7 +1073,6 @@
         ufo_data_file.read()   # read all the data in the file
 
         ufo_data_file.close()  # close it
-
         ```
 
         Nothing Happened! Why?
@@ -1198,7 +1189,7 @@
     import csv   # import the `csv` library
     ufo_data_file = open('ufo-subset.csv', 'r') # open the file
     ufo_data_dictionary_reader = csv.DictReader(ufo_data_file) # pass the file into `DictReader`
-   ```
+    ```
 
     Calling `DictReader()` gives us the ability to ask for the next line in the file using `next()`
      Store it in a variable and print it out
@@ -1206,12 +1197,12 @@
     ```python
     sighting = next(ufo_data_dictionary_reader)   # get the next row
     print(sighting)
-   ```
+    ```
 
     What is this?
     ```python
     OrderedDict([('Year', '2016'), ('Month', '9'), ('Day', '16'), ('Location', 'Iqaluit'), ('Province', 'NU')])
-       ```
+    ```
   </script>
 </section>
 
@@ -1222,12 +1213,12 @@
     Python used `DictReader` to read a row in the file and transform it into a **dictionary**, a bunch of *key: value pairs*.
 
     This is just like a regular dictionary:
-     > **[python](http://www.dictionary.com/browse/python)** : any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet
+    > **[python](http://www.dictionary.com/browse/python)** : any of several Old World boa constrictors of the subfamily Pythoninae, often growing to a length of more than 20 feet
 
-     The console printed out the sighting like this:
-      ```python
-      OrderedDict([('Year', '2016'), ('Month', '9'), ('Day', '16'), ('Location', 'Iqaluit'), ('Province', 'NU')])
-       ```
+    The console printed out the sighting like this:
+    ```python
+    OrderedDict([('Year', '2016'), ('Month', '9'), ('Day', '16'), ('Location', 'Iqaluit'), ('Province', 'NU')])
+    ```
 
     But think of it like this:
     > **Year**: '2016'
@@ -1244,8 +1235,8 @@
     Python can 'look up' each value in a row just as you would the meaning of the word *python*.
 
     ```python
-     print(sighting['Year'])
-     print(sighting['Location'])
+    print(sighting['Year'])
+    print(sighting['Location'])
     ```
   </script>
 </section>
@@ -1283,42 +1274,42 @@
 
 <section class="slide" data-markdown>
   <script type="text/template">
-    ## Use loops!
+        ## Use loops!
 
-    We already know how to make the computer loop through many things for us.
+        We already know how to make the computer loop through many things for us.
 
-    ```python
-    import csv
+        ```python
+        import csv
 
-    ufo_data_file = open('ufo-subset.csv', 'r')
-    ufo_data_dictionary_reader = csv.DictReader(ufo_data_file)
+        ufo_data_file = open('ufo-subset.csv', 'r')
+        ufo_data_dictionary_reader = csv.DictReader(ufo_data_file)
 
-    for sighting in ufo_data_dictionary_reader:
-      print(sighting['Location'])
+        for sighting in ufo_data_dictionary_reader:
+            print(sighting['Location'])
 
-    ufo_data_file.close()
-    ```
+        ufo_data_file.close()
+        ```
 
   </script>
 </section>
 
 <section class="slide" data-markdown>
   <script type="text/template">
-    ## Use booleans!
+        ## Use booleans!
 
-    Use what you learned about conditionals to check if the sighting is in 'MB' (or your province)
+        Use what you learned about conditionals to check if the sighting is in 'MB' (or your province)
 
-    ```python
-    import csv
+        ```python
+        import csv
 
-    ufo_data_file = open('ufo-subset.csv', 'r')
-    ufo_data_dictionary_reader = csv.DictReader(ufo_data_file)
+        ufo_data_file = open('ufo-subset.csv', 'r')
+        ufo_data_dictionary_reader = csv.DictReader(ufo_data_file)
 
-    for sighting in ufo_data_dictionary_reader:
-      if sighting['Province'] == 'MB':
-       print(sighting['Location'])
+        for sighting in ufo_data_dictionary_reader:
+            if sighting['Province'] == 'MB':
+                print(sighting['Location'])
 
-    ufo_data_file.close()
+        ufo_data_file.close()
     ```
 
   </script>
@@ -1327,28 +1318,28 @@
 
 <section class="slide" data-markdown>
   <script type="text/template">
-    ## Add it to a list!
+        ## Add it to a list!
 
-    Now that you have a sighting you are interested in keeping, you can add it to a list.
+        Now that you have a sighting you are interested in keeping, you can add it to a list.
 
-    ```python
-    import csv
+        ```python
+        import csv
 
-    sightings_in_mb = [] # this is an empty list
-    ufo_data_file = open('ufo-subset.csv', 'r')
-    ufo_data_dictionary_reader = csv.DictReader(ufo_data_file)
+        sightings_in_mb = [] # this is an empty list
+        ufo_data_file = open('ufo-subset.csv', 'r')
+        ufo_data_dictionary_reader = csv.DictReader(ufo_data_file)
 
-    for sighting in ufo_data_dictionary_reader:
-      if sighting['Province'] == 'MB':
-       sightings_in_mb.append(sighting)
+        for sighting in ufo_data_dictionary_reader:
+            if sighting['Province'] == 'MB':
+                sightings_in_mb.append(sighting)
 
-    ufo_data_file.close()
-    ```
+        ufo_data_file.close()
+        ```
 
-    Use the `len()` function you learned about earlier to print how many you have:
-    ```python
-    print(len(sightings_in_mb))
-    ```
+        Use the `len()` function you learned about earlier to print how many you have:
+        ```python
+        print(len(sightings_in_mb))
+        ```
 
   </script>
 </section>
