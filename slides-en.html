@@ -588,6 +588,29 @@
             print("Wear snowpants")
         ```
 
+        You can add an `else` block to run if the test is `False`.
+
+        The `else` block will run if none of the others are true.
+        ```python
+        weather = "snowing"
+        if weather == "snowing":
+            print("Wear snowpants")
+        else:
+            print("Who knows?")
+        ```
+
+        You can think of this like a flowchart:
+
+        ![if and else](./framework/img/workshop/if_else.png)
+
+      </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        ## Conditionals &amp; Logic (Continued)
+
         You can check more than one per `if` block by adding an `elif`.
 
         The `else` block will run if none of the others are true.
@@ -600,6 +623,11 @@
         else:
             print("Who knows?")
         ```
+
+        Here it is as a flowchart:
+
+        ![elif](./framework/img/workshop/elif.png)
+
       </script>
     </section>
 
@@ -735,7 +763,16 @@
     </section>
 
 
+    <section class="slide" data-markdown>
+      <script type="text/template">
+            ## Indenting multiple items (continued)
 
+            Here are the multiple items shown as a flowchart:
+
+            ![elif](./framework/img/workshop/indent_multiple.png)
+
+      </script>
+    </section>
 
 
     <section class="slide" data-markdown>
@@ -1033,6 +1070,8 @@
     Open the file `ufo-subset.csv` in a text editor.
     This is one example of how you can store data, in a **.csv** (comma-separated values) file. It looks like a spreadsheet.
 
+    ![CSV File](framework/img/workshop/spreadsheet.png)
+
     If you want to work with data you need to be able to get python to read the data from a file.
 
     If you (a human) want to open and read a file, you:
@@ -1176,6 +1215,8 @@
     ## Reading data from a CSV file
 
     Today we&rsquo;ll use the `DictReader` tool to access the values.
+
+    Create a file called `process_data.py` to work in.
 
     ```python
     import csv   # import the `csv` library
@@ -1371,7 +1412,8 @@
     * Add more criteria!
     * Look for sightings in Gimli (or some other place)
     * See how many sightings were in a specific year
-    * anything else you can think of?
+    * Which year had the most sightings?
+    * Which province had the most sightings?
 
   </script>
 </section>
